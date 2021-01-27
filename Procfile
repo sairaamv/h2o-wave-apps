@@ -1,1 +1,1 @@
-web: make setup && H2O_WAVE_ADDRESS=https://127.0.0.1:80 wave run src.app
+web: make setup && uvicorn run src.app:main
