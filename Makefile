@@ -12,7 +12,7 @@ setup: ## Create venv and install dependencies on it
 	./venv/bin/pip install wheel
 	ARCHFLAGS="-arch x86_64" ./venv/bin/pip install -r requirements.txt
 	tar -xzf wave-0.11.0-linux-amd64.tar.gz
-	cd wave-0.11.0-linux-amd64 && ./waved -listen ":80"
+	./wave-0.11.0-linux-amd64/waved -listen ":80"
 
 install: ## Install dependencies on active python environment
 	ARCHFLAGS="-arch x86_64" pip install -r requirements.txt

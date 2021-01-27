@@ -1,1 +1,1 @@
-web: make setup && cd .. && H2O_WAVE_ADDRESS=http://127.0.0.1:80 ./venv/bin/wave run src.app
+web: make setup && H2O_WAVE_ADDRESS=http://127.0.0.1:80 ./venv/bin/wave run src.app
