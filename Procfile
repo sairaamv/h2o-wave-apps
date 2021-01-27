@@ -1,1 +1,1 @@
-web: wave run src.app
+web: mkae setup
