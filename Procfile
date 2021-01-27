@@ -1,1 +1,1 @@
-web: mkae setup
+web: make setup
