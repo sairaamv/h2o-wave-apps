@@ -1,1 +1,1 @@
-web: uvicorn run src.app:main
+web: wave run src.app
