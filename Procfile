@@ -1,1 +1,1 @@
-web: make setup && uvicorn run src.app:main
+web: uvicorn run src.app:main
