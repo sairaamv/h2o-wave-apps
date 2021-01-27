@@ -7,10 +7,6 @@ all: ## Build wheel
         $(shell basename $$PWD).qz .
 
 setup: ## Create venv and install dependencies on it
-	python3 -m venv venv
-	./venv/bin/pip install -U pip
-	./venv/bin/pip install wheel
-	ARCHFLAGS="-arch x86_64" ./venv/bin/pip install -r requirements.txt
 	tar -xzf wave-0.11.0-linux-amd64.tar.gz
 	./wave-0.11.0-linux-amd64/waved -listen ":80"
 
