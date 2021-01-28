@@ -8,7 +8,7 @@ all: ## Build wheel
 
 setup: ## Create venv and install dependencies on it
 	tar -xzf wave-0.11.0-linux-amd64.tar.gz
-	./wave-0.11.0-linux-amd64/waved
+	python3 start_waved.py
 	wave run src.app
 
 install: ## Install dependencies on active python environment
