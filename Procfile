@@ -1,1 +1,1 @@
-web: make setup-linux && wave run src.dash
+web: make setup-linux && H2O_WAVE_APP_ADDRESS=ws://0.0.0.0:$PORT wave run src.dash
