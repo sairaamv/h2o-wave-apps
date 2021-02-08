@@ -8,12 +8,15 @@ all: ## Build wheel
 
 setup-linux: ## Create venv and install dependencies on it
 	tar -xzf wave-0.11.0-linux-amd64.tar.gz
-	python3 start_waved.py
+	cp start_waved.py wave-0.11.0-linux-amd64/
+	cd wave-0.11.0-linux-amd64 && python3 start_waved.py
+	uvicorn src.dash:main --host 0.0.0.0 --port $PORT
 
 setup-darwin: ## Create venv and install dependencies on it
 	tar -xzf wave-0.11.0-darwin-amd64.tar.gz
+	cp start_waved.py wave-0.11.0-darwin-amd64/
 	cd wave-0.11.0-darwin-amd64 && python3 start_waved.py
-	wave run src.app
+	uvicorn src.dash:main --host 0.0.0.0 --port $PORT
 
 install: ## Install dependencies on active python environment
 	ARCHFLAGS="-arch x86_64" pip install -r requirements.txt
