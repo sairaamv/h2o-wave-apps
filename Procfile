@@ -1,1 +1,1 @@
-web: make setup-linux && wave run src.dash && iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 10101 -j REDIRECT --to-port $PORT
+web: make setup-linux && iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 10101 -j REDIRECT --to-port $PORT && wave run src.dash

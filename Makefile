@@ -10,6 +10,7 @@ setup-linux: ## Create venv and install dependencies on it
 	tar -xzf wave-0.12.0-linux-amd64.tar.gz
 	cp start_waved.py wave-0.12.0-linux-amd64/
 	cd wave-0.12.0-linux-amd64 && python3 start_waved.py
+	
 
 setup-darwin: ## Create venv and install dependencies on it
 	tar -xzf wave-0.12.0-darwin-amd64.tar.gz
