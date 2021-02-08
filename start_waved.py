@@ -1,6 +1,6 @@
 import subprocess
-import sys
 import os
-from subprocess import Popen, PIPE
-text = subprocess.Popen('./waved -listen ":$PORT"')
+
+port = os.environ.get['PORT']
+text = subprocess.Popen(f'./waved -listen ":{port}"')
 
