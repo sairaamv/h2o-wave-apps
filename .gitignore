@@ -131,3 +131,4 @@ dmypy.json
 # others
 h2o_wave.state
 .idea
+wave-*/
